@@ -11,10 +11,8 @@ class Solution {
         for(int i=0; i<dots.length; i++){
             maxX = Math.max(maxX, dots[i][0]);
             minX = Math.min(minX, dots[i][0]);
-            for(int j=1; j<dots[i].length; j++){
-                maxY = Math.max(maxY, dots[i][j]);
-                minY = Math.min(minY, dots[i][j]);
-            }
+            maxY = Math.max(maxY, dots[i][1]);
+            minY = Math.min(minY, dots[i][1]);
         }
         answer = (maxX - minX) * (maxY - minY);
         return answer;
